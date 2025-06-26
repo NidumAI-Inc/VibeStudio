@@ -2,7 +2,7 @@
 
 VibeStudio is a comprehensive AI-powered development platform that combines a modern web application, robust backend API, and cross-platform desktop application. It provides an integrated development environment where developers can interact with AI to generate, manage, and preview code projects in real-time.
 
-[![VibeStudio Demo](Screenshot%202025-06-26%20at%208.23.33%20AM.png)](https://drive.google.com/file/d/1ln58xgwEIY5E-RB6NWTJR0lCgIXcg-Gk/view)
+[![VibeStudio Demo](img.png)](https://drive.google.com/file/d/1ln58xgwEIY5E-RB6NWTJR0lCgIXcg-Gk/view)
 
 ## 🏗️ Platform Architecture
 
