@@ -1,0 +1,8 @@
+@host = http://localhost:5000/api/faker
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODJiMjkzZDc2ZjA5ZmRkYjA3YzhhNGYiLCJleHAiOjE3NDc3NDU0ODR9.Am34PpsAZRg8wO84-m7wvDgwf7YgxHuyljf7Su1FYlQ
+
+
+### Generate random usages
+POST {{host}}/usage
+Authorization: {{token}}
+

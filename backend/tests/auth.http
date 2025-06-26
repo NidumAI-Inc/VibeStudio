@@ -1,0 +1,90 @@
+@host = http://localhost:5000/api/user
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODJhZjk5YjY4ZDBkZDQ1M2YwYTU0M2QiLCJleHAiOjE3NDc3MzMyODJ9.gcPxKgyeRLMEv1D9zlJEV3eE29PaPmwXytaw_GL5JOA
+
+
+### Register new user
+POST {{host}}/register
+Content-Type: application/json
+
+{
+  "email": "raj@gmail.com",
+  "password": "12345678"
+}
+
+
+### Resend OTP
+POST {{host}}/resend-otp
+Content-Type: application/json
+
+{
+  "email": "hacedob511@nozamas.com"
+}
+
+
+### Verify OTP
+POST {{host}}/verify-otp
+Content-Type: application/json
+
+{
+  "email": "movaga5712@kimasoft.com",
+  "otp": 271566
+}
+
+
+### Login user
+POST {{host}}/login
+Content-Type: application/json
+
+{
+  "email": "raj@gmail.com",
+  "password": "12345678"
+}
+
+
+### Get user details
+GET {{host}}/me
+Authorization: {{token}}
+
+
+### Update password
+PUT {{host}}/update-pass
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "oldPassword": "12345678",
+  "newPassword": "aA1!aaaa"
+}
+
+
+### forget password
+POST {{host}}/forget-pass
+Content-Type: application/json
+
+{
+  "email": "raj@gmail.com"
+}
+
+
+### reset password
+POST {{host}}/reset-pass
+Content-Type: application/json
+
+{
+  "email": "raj@gmail.com",
+  "password": "12345678",
+  "otp": 119232
+}
+
+
+### Logout user
+POST {{host}}/logout
+Content-Type: application/json
+Authorization: {{token}}
+
+
+### Delete Account
+DELETE {{host}}/account
+Content-Type: application/json
+Authorization: {{token}}
+

@@ -1,0 +1,9 @@
+@host = http://localhost:5000/api/user
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzRlYTQ3NWJjOTFkMzM0NjdiMjEyMzAiLCJleHAiOjE3NDIxMzI5MjZ9.44GrZ0_Jks55cF7GWibtBfEDQFgnaluvkBum1pV3ZRo
+
+
+### Update user
+PUT {{host}}/update
+Content-Type: application/json
+Authorization: {{token}}
+

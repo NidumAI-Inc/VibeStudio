@@ -1,0 +1,30 @@
+@host = http://localhost:5000/api/usage
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODJjMjNlN2Y3MzYxMmNmMTJlYWQ2ZmEiLCJleHAiOjE3NDc4MDk2NDl9.ia6WvFIFREa6G1pSV1So8gEjmdxV20xoafCLcbHJcZw
+
+
+### Get all usages
+GET {{host}}/all/nativenode
+Authorization: {{token}}
+
+
+### Get usages overview
+GET {{host}}/overview/nativenode
+Authorization: {{token}}
+
+
+### Get usages by server
+GET {{host}}/server/682ac174b2d0a8a0018c0666/nativenode
+Authorization: {{token}}
+
+
+### Update usage
+POST {{host}}
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "type": "nativenode",
+  "bandWidthIn": 20,
+  "bandWidthOut": 10,
+  "serverId": "682ac174b2d0a8a0018c0666"
+}

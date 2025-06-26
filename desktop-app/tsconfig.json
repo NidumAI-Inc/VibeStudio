@@ -1,0 +1,44 @@
+{
+	"compilerOptions": {
+		"target": "es2022",
+		"lib": [
+			"es2022",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"module": "es2022",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"removeComments": false,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"moduleDetection": "force",
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"strict": false,
+		"noImplicitAny": true,
+		"noImplicitReturns": false,
+		"noImplicitThis": true,
+		"noImplicitOverride": true,
+		"allowJs": true,
+		"baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+	},
+	"include": [
+		"./src",
+		"electronApp"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
+}

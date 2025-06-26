@@ -1,0 +1,6 @@
+# General patterns for large files
+*.bin
+
+# Mac folder and native_node_chain
+desktop-app/public/bin/mac/
+desktop-app/public/bin/native_node_chain

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Light Blue/White Theme */
+@layer base {
+  :root {
+    --background: 220 100% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 220 50% 96%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 220 50% 96%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 90%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 220 20% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 220 20% 90%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 85%;
+    --input: 220 50% 96%;
+    --ring: 210 100% 50%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+    background-image: radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(147, 197, 253, 0.03) 0%, transparent 50%);
+  }
+
+  .glass {
+    @apply bg-blue-50/80 backdrop-blur-xl border border-blue-200/50;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+@layer utilities {
+  .animate-shimmer {
+    background-size: 300% 100%;
+    animation: shimmer-move 2s linear infinite;
+  }
+
+  @keyframes shimmer-move {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
