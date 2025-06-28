@@ -4,6 +4,15 @@ VibeStudio is a comprehensive AI-powered development platform that combines a mo
 
 [![Watch VibeStudio Demo](https://img.shields.io/badge/▶️%20Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=3yUmCKH4drw)
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=3yUmCKH4drw">
+    <img src="https://img.youtube.com/vi/3yUmCKH4drw/maxresdefault.jpg" alt="VibeStudio Demo" style="width:100%;max-width:600px;">
+  </a>
+  <br>
+  <a href="https://www.youtube.com/watch?v=3yUmCKH4drw">
+    <img src="https://img.shields.io/badge/▶️%20Click%20to%20Play-YouTube-red?style=for-the-badge&logo=youtube" alt="Play Video">
+  </a>
+</div>
 ## 🏗️ Platform Architecture
 
 VibeStudio consists of three main components:
